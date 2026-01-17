@@ -26,9 +26,9 @@ body {
     --btn-hover-color: rgba(255, 255, 255, 0.123);
 }
 
+
 .width_fixed {
     max-width: 1060px;
-
 }
 
 .btn-primary {
@@ -44,13 +44,11 @@ body {
     border-radius: 46px;
     padding: 8px 20px;
     background-color: var(--btn-hover-color);
-
 }
 
 .section-tittle {
     font-weight: 900;
     font-size: 3rem;
-
 }
 
 .section-description {
@@ -59,14 +57,13 @@ body {
     color: var(--secondary-color);
 }
 
-
 /* header related styles */
+
 header {
     padding-top: 57px;
     width: 100%;
     background: linear-gradient(180.00deg, rgba(17.41, 17.41, 17.41, 1) 0%, rgba(119.41, 119.41, 119.41, 0) 100%);
 }
-
 
 /* navbar related styles */
 .navbar {
@@ -82,9 +79,10 @@ header {
 }
 
 .nav_menu_container {
+
     gap: 47px;
     align-items: center;
-    text-align: center;
+    list-style: none;
     border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 4px;
     padding-right: 20px;
@@ -92,8 +90,10 @@ header {
 }
 
 .nav_menu_container li {
-    list-style: none;
+    
     cursor: pointer;
+    text-align: center;
+    margin: 0;
 }
 
 .menu_bar {
@@ -222,7 +222,9 @@ header {
 }
 
 /* Trainings related styles */
-.trainings , .team {
+.trainings,
+.team,
+.footer-section {
     max-width: 1060px;
     margin: 100px auto;
     width: 90%;
@@ -233,24 +235,31 @@ header {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 250px);
 }
+
 .trainings-box1 {
     background-color: rgb(6, 255, 209);
 }
+
 .trainings-box2 {
     background-color: rgb(238, 106, 106);
 }
+
 .trainings-box3 {
     background-color: rgb(168, 166, 166);
 }
+
 .trainings-box4 {
     background-color: rgb(87, 79, 79);
 }
+
 .trainings-box5 {
     background-color: rgb(129, 255, 84);
 }
+
 .trainings-box6 {
     background-color: rgb(103, 156, 255);
 }
+
 .trainings-box-container>div {
     position: relative;
 }
@@ -263,7 +272,7 @@ header {
     bottom: 10%;
 }
 
-.position-top-left{
+.position-top-left {
     position: absolute;
     z-index: 2;
     color: aliceblue;
@@ -271,7 +280,7 @@ header {
     left: 10%;
 }
 
-.position-top-right{
+.position-top-right {
     position: absolute;
     z-index: 2;
     color: aliceblue;
@@ -286,38 +295,43 @@ header {
     mix-blend-mode: multiply;
 }
 
-.trainings-box2{
+.trainings-box2 {
     grid-column: span 2;
 }
-.trainings-box4{
-    grid-column: 1/3 ;
+
+.trainings-box4 {
+    grid-column: 1/3;
 }
 
 /* team related styles */
-.team{
+.team {
     text-align: center;
 
 }
-.team-container{
+
+.team-container {
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 250px);
     gap: 20px;
     background-color: rgba(109, 106, 106, 0.2);
     border-radius: 18px;
     padding: 20px;
 }
-.team-card img{
+
+.team-card img {
     width: 100%;
     height: 100%;
     border-radius: 18px;
     object-fit: cover;
 
 }
-.team-card{
+
+.team-card {
     position: relative;
 }
-.team-card-detail{
+
+.team-card-detail {
     position: absolute;
     z-index: 2;
     color: aliceblue;
@@ -325,15 +339,84 @@ header {
     bottom: 8%;
 
 }
-.team-card-detail>h4{
+
+.team-card-detail>h4 {
 
     font-size: 1.25rem;
     font-weight: 900;
 }
-.team-card-detail>p{
+
+.team-card-detail>p {
     font-size: 0.8rem;
     color: var(--secondary-color);
 }
+
+/* Footer related styles */
+footer {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-section {
+    margin-bottom: 0;
+    width: 90%;
+    padding: 100px 0;
+
+}
+
+.footer-container {
+    display: flex;
+    gap: 5%;
+    padding-bottom: 4%;
+    align-items: flex-start;
+
+}
+
+.footer-services-container {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.footer-content {
+    flex: 1;
+    max-width: 444px;
+}
+
+.footer-title {
+    color: var(--primary-color);
+}
+
+ul li {
+    margin-bottom: 8px;
+    color: var(--secondary-color);
+}
+
+.service-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.service-link-container {
+    width: 100%;
+}
+
+hr {
+    color: var(--secondary-color);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    color: var(--secondary-color);
+}
+
+
+
+
+
+
+
+
 /* responsive for phones */
 @media screen and (max-width:576px) {
 
@@ -409,7 +492,7 @@ header {
         margin-top: 58px;
         margin: 3%;
     }
-    
+
     .run {
 
         flex-direction: column;
@@ -441,13 +524,31 @@ header {
     .trainings-box4 {
         grid-column: span 1;
     }
-    .team-container{
-    display: grid;
-    grid-template-columns: repeat(1 , 1fr);
-    grid-auto-rows: minmax(200px, auto);
-    
-    
-}
+
+    .team-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(200px, auto);
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .trainings {
+        text-align: center;
+    }
+     .footer-services-container {
+        
+        width: 100%;
+        gap: 10%;
+    }
+
+    .service-title {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+   
 }
 
 /* responsive for tabs */
@@ -510,7 +611,18 @@ header {
         gap: 40px;
         margin-top: 58px;
     }
-    .trainings{
+
+    .trainings {
         text-align: center;
+    }
+     .footer-services-container {
+        justify-content: space-around;
+        width: 100%;
+        gap: 5%;
+    }
+
+    .service-title {
+        font-size: 1.3rem;
+        font-weight: bold;
     }
 }
