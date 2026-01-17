@@ -34,6 +34,7 @@ body {
 .btn-primary {
     border-radius: 46px;
     padding: 8px 20px;
+    max-width: 100%;
     background-color: var(--primary-color);
 }
 
@@ -54,6 +55,7 @@ body {
 
 .section-description {
     font-size: 0.85rem;
+    margin-bottom: 20px;
     color: var(--secondary-color);
 }
 
@@ -162,9 +164,11 @@ header {
     gap: 40px;
     margin-top: 58px;
 }
-.habit-card{
+
+.habit-card {
     width: 231px;
 }
+
 .habit-card>img {
     height: 180px;
     width: 180px;
@@ -178,6 +182,59 @@ header {
     font-size: 1.15rem;
     font-weight: 600;
 }
+
+/* run related styles */
+.run {
+
+    display: flex;
+    max-width: 1060px;
+    margin: 100px auto;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10.3rem;
+    width: 95%;
+    border-radius: 18px;
+    background: rgba(34, 34, 34, 1);
+
+}
+
+.run-btn,
+.run-btn:hover {
+    padding: 1rem 4.4rem;
+
+}
+
+.run-container {
+    margin: 40px 54px;
+    width: 50%;
+}
+
+.run-img {
+    margin: 30px;
+    width: 466px;
+    height: 312px;
+    background-position: 66% 18%;
+    background-size: 330%;
+    background-repeat: no-repeat;
+    background-image: url("/images/run.jpg");
+    border-radius: 18px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive for phones */
 @media screen and (max-width:576px) {
@@ -255,6 +312,20 @@ header {
         margin: 3%;
     }
 
+    .run {
+
+        flex-direction: column;
+        max-width: 1060px;
+        text-align: center;
+        gap: 1.3rem;
+
+    }
+    .run-container , .run-img{
+    margin: 40px 54px;
+    width: 90%;
+
+}
+
 }
 
 /* responsive for tabs */
@@ -285,14 +356,14 @@ header {
 
 
     .workout-videos1 {
-        max-width:150px;
-          top: 25%;
-          right: -5%;
+        max-width: 150px;
+        top: 25%;
+        right: -5%;
     }
 
     .workout-videos2 {
         max-width: 140px;
-         bottom: 9%;
+        bottom: 9%;
         right: 15%;
     }
 
@@ -304,6 +375,7 @@ header {
     .workout2 {
         font-size: 0.8rem;
     }
+
     .section-tittle {
         font-weight: 700;
         font-size: 2.6rem;
