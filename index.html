@@ -1,26 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness</title>
+    <!-- tailwind css -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+    <!-- css class -->
     <link rel="stylesheet" href="./CSS/styles.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
     <header>
-        <nav class=" flex">
-            <h1>Fitness</h1>
-            <div class="flex">
-                <p>Home</p>
-                <p>Service</p>
-                <p>Contract</p>
-                <p>About</p>
+        <!-- navbar section -->
+        <nav class="navbar flex width_fixed">
+            <h3>Fitness</h3>
+            <ul class="nav_menu_container flex">
+                <li class="btn-primary">Home</li>
+                <li>Service</li>
+                <li>Contract</li>
+                <li class="px-5">About</li>
+            </ul>
+
+            <div class="menu_bar flex">
+                <h2><i class="fa-solid fa-bars"></i></h2>
             </div>
         </nav>
+
+        <!-- hero section -->
+        <section class="hero flex width_fixed gap-20">
+            <div class="hero-container">
+                <h1>Get body in shape & stay healthy</h1>
+                <p class="section-description">A huge selection of health and fitness content, healthy recipes and
+                    transformation stories to help you get fit and stay fit!</p>
+                <div class="hero-btn-container flex gap-2">
+                    <button class="btn-primary">Join Club Now!</button>
+                    <button id="hero-download-btn" class="btn-primary">Download App</button>
+                </div>
+            </div>
+            <div class="hero_img">
+                <img src="./images/Images 2.png" alt="">
+
+                <div class="workout-videos workout-videos1">
+                    <p class="workout text-[2.5rem] font-black">500+</p>
+                    <p class="workout2 text-[var(--secondary-color)] ">Free Workout Videos</p>
+                </div>
+                <div class="workout-videos workout-videos2 flex justify-between items-center">
+                    <div class="w-10 h-10 rounded-full bg-[var(--primary-color)] ">
+
+                    </div>
+                    <div>
+                        <p class=" workout text-[2.5rem] font-black">300+</p>
+                        <p class="workout2 text-[var(--secondary-color)] ">Video tutorial</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
     </header>
 
 </body>

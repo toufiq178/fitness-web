@@ -1,0 +1,260 @@
+/* font relates styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* shared styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+/* primary related styles */
+:root {
+    --primary-color: #E6533C;
+    --secondary-color: rgba(255, 255, 255, 0.5);
+    --btn-hover-color: rgba(255, 255, 255, 0.123);
+}
+
+.width_fixed {
+    max-width: 1060px;
+
+}
+
+.btn-primary {
+    border-radius: 46px;
+    padding: 8px 20px;
+    background-color: var(--primary-color);
+}
+
+.btn-primary:hover,
+.nav_menu_container li:hover {
+    color: var(--primary-color);
+    border-radius: 46px;
+    padding: 8px 20px;
+    background-color: var(--btn-hover-color);
+
+}
+
+.section-description {
+
+    color: var(--secondary-color);
+}
+
+
+/* header related styles */
+header {
+    padding-top: 57px;
+    background: linear-gradient(180.00deg, rgba(17.41, 17.41, 17.41, 1) 0%, rgba(119.41, 119.41, 119.41, 0) 100%);
+}
+
+
+/* navbar related styles */
+.navbar {
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.navbar>h3 {
+    font-weight: 800;
+    font-size: 2.25rem;
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+.nav_menu_container {
+    gap: 47px;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4px;
+    padding-right: 20px;
+    border-radius: 39px;
+}
+
+.nav_menu_container li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.menu_bar {
+    align-items: center;
+    display: none;
+    padding: 20px;
+}
+
+/* hero related styles */
+.hero {
+    margin: 100px auto;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hero-container {
+    max-width: 520px;
+}
+
+.hero-container>h1 {
+    font-size: 4.8rem;
+    font-weight: 900;
+
+}
+
+.hero-btn-container {
+    margin-top: 58px;
+}
+
+
+#hero-download-btn {
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+}
+
+
+.workout-videos {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 8px 12px;
+    backdrop-filter: blur(8px);
+    position: absolute;
+}
+
+.workout-videos1 {
+    width: 193px;
+    margin-top: -41%;
+    margin-left: 20%;
+}
+
+.workout-videos2 {
+    width: 206px;
+    margin-top: -17%;
+    margin-left: -11%;
+}
+
+
+
+
+
+/* responsive for phones */
+@media screen and (max-width:576px) {
+
+
+
+    .navbar {
+        margin: 5%;
+    }
+
+    .nav_menu_container {
+        display: none;
+    }
+
+    .menu_bar {
+        display: inline-block;
+    }
+
+    .menu_bar:hover {
+        color: var(--btn-hover-color);
+    }
+
+    .hero {
+        flex-direction: column;
+        margin: 5%;
+        align-items: center;
+    }
+
+    .hero-container>h1 {
+        font-size: 2.3rem;
+        font-weight: 800;
+
+    }
+
+    .workout-videos {
+
+        padding: 6px 8px;
+        backdrop-filter: blur(4px);
+
+    }
+
+
+    .workout-videos1 {
+        width: 150px;
+        margin-top: -115%;
+        margin-left: 50%;
+    }
+
+    .workout-videos2 {
+        width: 160px;
+        margin-top: -76%;
+        margin-left: -6%;
+    }
+
+    .workout {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .workout2 {
+        font-size: 0.8rem;
+    }
+
+}
+
+/* responsive for tabs */
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .navbar {
+        margin: 5%;
+    }
+
+    .hero {
+
+        margin: 5%;
+
+    }
+
+    .hero-container>h1 {
+        font-size: 3.3rem;
+        font-weight: 800;
+
+    }
+
+    .workout-videos {
+
+        padding: 6px 8px;
+        backdrop-filter: blur(4px);
+
+    }
+
+
+    .workout-videos1 {
+        width: 150px;
+        margin-top: -40%;
+        margin-left: 19%;
+    }
+
+    .workout-videos2 {
+        width: 140px;
+        margin-top: -14%;
+        margin-left: -5%;
+    }
+
+    .workout {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .workout2 {
+        font-size: 0.8rem;
+    }
+}
