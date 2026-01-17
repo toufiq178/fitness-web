@@ -216,7 +216,7 @@ header {
     background-position: 66% 18%;
     background-size: 330%;
     background-repeat: no-repeat;
-    background-image: url("/images/run.jpg");
+    background-image: url("../images/run.jpg");
     border-radius: 18px;
 
 }
@@ -267,9 +267,6 @@ header {
     height: 100%;
     object-fit: cover;
     mix-blend-mode: multiply;
-
-
-
 }
 
 .trainings-box2,
