@@ -233,30 +233,47 @@ header {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 250px);
 }
-
+.trainings-box1 {
+    background-color: rgb(6, 255, 209);
+}
+.trainings-box2 {
+    background-color: rgb(238, 106, 106);
+}
+.trainings-box3 {
+    background-color: rgb(168, 166, 166);
+}
+.trainings-box4 {
+    background-color: rgb(87, 79, 79);
+}
+.trainings-box5 {
+    background-color: rgb(129, 255, 84);
+}
+.trainings-box6 {
+    background-color: rgb(103, 156, 255);
+}
 .trainings-box-container>div {
     position: relative;
 }
 
 .position-bottom-left {
     position: absolute;
-    z-index: 50;
+    z-index: 2;
     color: aliceblue;
     left: 10%;
     bottom: 10%;
 }
 
-.trainings-box2>p {
+.position-top-left{
     position: absolute;
-    z-index: 50;
+    z-index: 2;
     color: aliceblue;
     top: 10%;
     left: 10%;
 }
 
-.trainings-box4>p {
+.position-top-right{
     position: absolute;
-    z-index: 50;
+    z-index: 2;
     color: aliceblue;
     top: 10%;
     right: 20%;
@@ -269,17 +286,12 @@ header {
     mix-blend-mode: multiply;
 }
 
-.trainings-box2,
-.trainings-box4 {
+.trainings-box2{
     grid-column: span 2;
 }
-
-
-
-
-
-
-
+.trainings-box4{
+    grid-column: 1/3 ;
+}
 
 
 
