@@ -221,9 +221,61 @@ header {
 
 }
 
+/* Trainings related styles */
+.trainings {
+    max-width: 1060px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.trainings-box-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 250px);
+}
+
+.trainings-box-container>div {
+    position: relative;
+}
+
+.position-bottom-left {
+    position: absolute;
+    z-index: 50;
+    color: aliceblue;
+    left: 10%;
+    bottom: 10%;
+}
+
+.trainings-box2>p {
+    position: absolute;
+    z-index: 50;
+    color: aliceblue;
+    top: 10%;
+    left: 10%;
+}
+
+.trainings-box4>p {
+    position: absolute;
+    z-index: 50;
+    color: aliceblue;
+    top: 10%;
+    right: 20%;
+}
+
+.trainings-box-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
 
 
 
+}
+
+.trainings-box2,
+.trainings-box4 {
+    grid-column: span 2;
+}
 
 
 
@@ -320,11 +372,29 @@ header {
         gap: 1.3rem;
 
     }
-    .run-container , .run-img{
-    margin: 40px 54px;
-    width: 90%;
 
-}
+    .run-container,
+    .run-img {
+        margin: 40px 54px;
+        width: 90%;
+
+    }
+
+    .trainings-box-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 200px);
+    }
+
+    .trainings-box3,
+    .trainings-box6 {
+        display: none;
+    }
+
+    .trainings-box2,
+    .trainings-box4 {
+        grid-column: span 1;
+    }
 
 }
 
@@ -387,5 +457,8 @@ header {
         align-items: center;
         gap: 40px;
         margin-top: 58px;
+    }
+    .trainings{
+        text-align: center;
     }
 }
